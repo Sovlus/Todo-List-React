@@ -1,13 +1,184 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo-list {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.todo-item {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+width: 100%;
+}
+
+.todo-text {
+	flex-grow: 1;
+	margin-left: 10px;
+}
+
+.todo-remove, .todo-edit {
+	margin-left: auto;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #999;
+}
+
+
+.todo-remove:hover, .todo-edit:hover {
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(127, 0, 231);
+  border-radius: 5px;
+  outline: none;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #000;
+}
+
+.delete-button {
+  background-color: #ff6b6b;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: right;
+  margin-left: 50px;
+}
+.edit-button {
+	background-color: #7a7a7a;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  justify-content: center;
+  align-items: right;
+  margin-left: 15px;
+	position: absolute;
+}
+
+.delete-button i {
+  font-size: 16px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 36px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.input {
+  width: 70%;
+  padding: 10px;
+  font-size: 18
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-group .form-control {
+  flex: 1;
+}
+
+.input-group .btn {
+  border-radius: 0;
+}
+
+button .button {
+  width: 15%;
+  padding: 10px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+button:hover {
+	background-color: rgba(0, 255, 128, 0.233);
+}
+
+li {
+	flex-direction: row;
+	text-align: left;
+	margin-right: 30px;
+	margin-top: 30px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	height: 40px;
+	align-items: center;
+	text-align: left;
+	line-height: 40px;
+	margin-left: 10px;
+	padding: 15px;
+}
+
+li p {
+	padding: 30px;
+}
+
+button .editbutton {
+	margin-left: 30px;
+}
+
+button .dodaj {
+	height: 10px;
+	float: right;;
+}
+
+ul button {
+	position: absolute;
+	float: right;
+}
+
+.button {
+  background-color: #1fc224;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+	border: 1px solid #1fc224;
+}
+
+.button:hover {
+  border: 1px solid rgb(25, 105, 25);
 }
